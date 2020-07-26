@@ -7,7 +7,8 @@ import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { RouterModule } from "@angular/router";
-
+import {FormsModule} from '@angular/forms';
+import { ComponentsModule } from '../components/components.module';
 
 
 @NgModule({
@@ -19,14 +20,17 @@ import { RouterModule } from "@angular/router";
   ],
   imports: [
     CommonModule,
+    FormsModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    ComponentsModule,
   ],
   exports: [
     ProgressComponent,
     Grafica1Component,
     DashboardComponent,
     PagesComponent,
+    ComponentsModule
   ],
 })
 export class PagesModule { }
