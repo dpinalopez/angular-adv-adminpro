@@ -8054,3 +8054,7 @@ File: scss
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both
 }
+
+#themecolors {
+    cursor: pointer;
+}
