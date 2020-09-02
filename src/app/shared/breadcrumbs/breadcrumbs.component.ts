@@ -13,7 +13,7 @@ export class BreadcrumbsComponent  implements OnDestroy {
 
   public titulo: string;
   public tituloSubs: Subscription;
-
+  
   constructor(private router1: Router, private route: ActivatedRoute) {
     this.tituloSubs = this.getArgumentosRuta()
       .subscribe(({titulo}) => {
