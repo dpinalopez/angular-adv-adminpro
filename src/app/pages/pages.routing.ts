@@ -8,6 +8,7 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { AuthGuard } from '../guards/auth.guard';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,9 @@ const routes: Routes = [
           {path: 'progress', component:ProgressComponent, data: {titulo: 'Progress'}},
           {path: 'account-settings', component:AccountSettingsComponent, data: {titulo: 'Settings'}},
           {path: 'promesas', component: PromesasComponent, data: {titulo: 'Promesas'}},
-          {path: 'rxjs', component: RxjsComponent, data: {titulo: 'Rxjs'}}
+          {path: 'rxjs', component: RxjsComponent, data: {titulo: 'Rxjs'}},
+          {path: 'perfil', component: PerfilComponent, data: {titulo: 'Perfil'}},
+
         ],
     }
 ];

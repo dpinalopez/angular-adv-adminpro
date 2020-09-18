@@ -49,7 +49,7 @@ export class LoginComponent implements OnInit {
       },(err) => {
         Swal.fire('Error', err.error.msg, 'error');
       })
-    console.log(this.loginForm.value);
+    
     this.router.navigateByUrl('/');
   }
 
@@ -90,7 +90,6 @@ export class LoginComponent implements OnInit {
   }
 
   attachSignin(element) {
-    console.log(element.id);
     this.auth2.attachClickHandler(element, {},
         (googleUser)=> {
           const id_token = googleUser.getAuthResponse().id_token;
